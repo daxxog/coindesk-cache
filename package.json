@@ -1,0 +1,40 @@
+{
+    "name"        : "coindesk-cache",
+    "description" : "Cache server for the coindesk api.",
+    "license"     : "Apache-2.0",
+    "homepage"    : "https://github.com/daxxog/coindesk-cache",
+    "main"        : "coindesk-cache.min.js",
+    "version"     : "0.0.1",
+    "engines": {
+        "node" : ">=4.2.4"
+    },
+    "maintainers": [{
+        "name"  : "David Volm",
+        "email" : "david@volminator.com",
+        "web"   : "http://daxxog.com/"
+    }],
+    "repository": {
+        "type" : "git",
+        "url"  : "https://github.com/daxxog/coindesk-cache.git"
+    },
+    "devDependencies": {
+        "bitfactory": "*",
+        "stoptime": "*",
+        "uglify-js": "2.6.0",
+        "vows": "*"
+    },
+    "scripts": {
+        "build": "node make.js; cat .gitignore | grep -v coindesk-cache.min.js > .npmignore",
+        "test": "vows test/*",
+        "start": "node cli.js",
+        "prepublish": "npm run build"
+    },
+    "files": [
+        "cli.min.js",
+        "coindesk-cache.min.js",
+        "bin/coindesk-cache"
+    ],
+    "bin": {
+        "coindesk-cache" : "bin/coindesk-cache"
+    }
+}
