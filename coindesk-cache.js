@@ -21,6 +21,23 @@
   }
 }(this, function() {
     var CoindeskCache;
+
+    var opt = require('optimist')
+        .alias('e', 'endpoint')
+            .describe('e', 'The CoinDesk API endpoint.')
+            .default('e', 'https://api.coindesk.com/v1/bpi/')
+
+        .alias('db', 'database')
+            .describe('db', 'The MongoDB connection url.')
+            .default('db', 'mongodb://coindesk:password@127.0.0.1:27017/coindesk')
+
+        argv = opt.argv;
     
+    CoindeskCache = function() {
+        console.log("Connecting to endpoint: " + argv.endpoint);
+        console.log("Connecting to database: " + argv.database);
+        console.log("Starting the coindesk cache server!");
+    };
+
     return CoindeskCache;
 }));
