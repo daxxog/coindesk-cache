@@ -42,6 +42,7 @@
     "dependencies": {
         "express": "4.16.4",
         "mongodb": "3.2.3",
-        "optimist": "0.6.1"
+        "optimist": "0.6.1",
+        "request": "2.88.0"
     }
 }
