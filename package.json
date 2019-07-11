@@ -41,8 +41,10 @@
     },
     "dependencies": {
         "express": "4.16.4",
+        "moment": "2.24.0",
         "mongodb": "3.2.3",
         "optimist": "0.6.1",
-        "request": "2.88.0"
+        "request": "2.88.0",
+        "switch-factory": "0.0.6"
     }
 }
