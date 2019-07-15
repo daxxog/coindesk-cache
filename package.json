@@ -45,6 +45,7 @@
         "mongodb": "3.2.3",
         "optimist": "0.6.1",
         "request": "2.88.0",
+        "string": "3.3.3",
         "switch-factory": "0.0.6"
     }
 }

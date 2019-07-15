@@ -51,15 +51,12 @@
         app = express(),
         port = opt.argv.port;
 
-    var request = require('request');
-
-    var path = require('path');
-
-    var MongoClient = require('mongodb').MongoClient;
-
-    var sf = require('switch-factory');
-
-    var moment = require('moment');
+    var request = require('request'),
+        path = require('path'),
+        MongoClient = require('mongodb').MongoClient,
+        sf = require('switch-factory'),
+        moment = require('moment'),
+        S = require('string');
 
     var apiHeader = "/v1/bpi/",
         apiEndpoints = ["supported-currencies.json", "currentprice.json", "currentprice/[!supported].json", "historical/close.json"],
