@@ -4,7 +4,7 @@
     "license": "Apache-2.0",
     "homepage": "https://github.com/daxxog/coindesk-cache",
     "main": "coindesk-cache.min.js",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "node": ">=4.2.4"
     },
