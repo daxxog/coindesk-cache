@@ -40,7 +40,7 @@
         "coindesk-cache": "bin/coindesk-cache"
     },
     "dependencies": {
-        "express": "4.16.4",
+        "express": "4.19.2",
         "moment": "2.24.0",
         "mongodb": "3.2.3",
         "optimist": "0.6.1",
